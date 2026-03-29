@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - Class Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Updated Navigation with Billing -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Class Portal</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="billing.html" class="nav-link active">Billing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Billing Hero -->
+    <section class="billing-hero">
+        <div class="container">
+            <h1>Secure Billing & Payments</h1>
+            <p>Manage your subscriptions, view invoices, and update payment methods</p>
+        </div>
+    </section>
+
+    <!-- Billing Dashboard -->
+    <section class="billing-dashboard">
+        <div class="container">
+            <div class="billing-header">
+                <h2>Your Billing Overview</h2>
+                <div class="billing-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">$247.00</span>
+                        <span class="stat-label">Total Spent</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Active Subscriptions</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Invoices</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="billing-section">
+                <h3><i class="fas fa-credit-card"></i> Payment Methods</h3>
+                <div class="payment-methods">
+                    <div class="payment-card active">
+                        <div class="card-icon">
+                            <i class="fab fa-cc-visa"></i>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-number">**** **** **** 4242</div>
+                            <div class="card-info">
+                                <span>John Doe</span>
+                                <span>Expires 12/26</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-small primary">Set Default</button>
+                            <button class="btn-small secondary">Remove</button>
+                        </div>
+                    </div>
+                    <div class="payment-card">
+                        <div class="card-icon">
+                            <i class="fab fa-cc-mastercard"></i>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-number">**** **** **** 1234</div>
+                            <div class="card-info">
+                                <span>John Doe</span>
+                                <span>Expires 03/25</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-small primary">Set Default</button>
+                            <button class="btn-small secondary">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-add-card">+ Add New Payment Method</button>
+            </div>
+
+            <!-- Subscriptions -->
+            <div class="billing-section">
+                <h3><i class="fas fa-sync-alt"></i> Active Subscriptions</h3>
+                <div class="subscriptions-grid">
+                    <div class="subscription-item">
+                        <div class="subscription-header">
+                            <h4>Web Development Bootcamp</h4>
+                            <span class="status active">Active</span>
+                        </div>
+                        <div class="subscription-details">
+                            <div class="price-row">
+                                <span>$49.00</span>
+                                <span>/month</span>
+                            </div>
+                            <div class="next-payment">
+                                <i class="fas fa-calendar-alt"></i>
+                                Next: Dec 15, 2024
+                            </div>
+                        </div>
+                        <div class="subscription-actions">
+                            <button class="btn-small secondary">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="subscription-item">
+                        <div class="subscription-header">
+                            <h4>Data Science with Python</h4>
+                            <span class="status active">Active</span>
+                        </div>
+                        <div class="subscription-details">
+                            <div class="price-row">
+                                <span>$59.00</span>
+                                <span>/month</span>
+                            </div>
+                            <div class="next-payment">
+                                <i class="fas fa-calendar-alt"></i>
+                                Next: Dec 15, 2024
+                            </div>
+                        </div>
+                        <div class="subscription-actions">
+                            <button class="btn-small secondary">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Invoices -->
+            <div class="billing-section">
+                <h3><i class="fas fa-file-invoice"></i> Recent Invoices</h3>
+                <div class="invoices-grid">
+                    <div class="invoice-item">
+                        <div class="invoice-date">Nov 15, 2024</div>
+                        <div class="invoice-amount">$108.00</div>
+                        <div class="invoice-status paid">Paid</div>
+                        <a href="#" class="invoice-link">View Receipt</a>
+                    </div>
+                    <div class="invoice-item">
+                        <div class="invoice-date">Oct 15, 2024</div>
+                        <div class="invoice-amount">$108.00</div>
+                        <div class="invoice-status paid">Paid</div>
+                        <a href="#" class="invoice-link">View Receipt</a>
+                    </div>
+                </div>
+                <div class="view-all-invoices">
+                    <a href="#" class="btn-secondary">View All Invoices</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Class Portal. All rights reserved. | Secure payments powered by Stripe</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

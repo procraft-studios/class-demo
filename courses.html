@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Class Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav class="navbar">
+        <!-- Copy the entire nav from index.html -->
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Class Portal</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link active">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Courses Hero -->
+    <section class="courses-hero">
+        <div class="container">
+            <h1>All Courses</h1>
+            <p>Choose from our comprehensive course catalog</p>
+        </div>
+    </section>
+
+    <!-- Course Categories -->
+    <section class="course-categories" id="web-dev">
+        <div class="container">
+            <div class="category-header">
+                <h2>Web Development</h2>
+                <a href="#" class="view-all">View All →</a>
+            </div>
+            <div class="courses-grid">
+                <div class="course-detailed">
+                    <div class="course-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="course-info">
+                        <h3>Complete Web Development Bootcamp</h3>
+                        <p>HTML, CSS, JavaScript, React, Node.js</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 24 weeks</span>
+                            <span><i class="fas fa-users"></i> 120 students</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$49</span>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more courses here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="course-categories" id="data-science">
+        <div class="container">
+            <div class="category-header">
+                <h2>Data Science & AI</h2>
+                <a href="#" class="view-all">View All →</a>
+            </div>
+            <div class="courses-grid">
+                <div class="course-detailed">
+                    <div class="course-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="course-info">
+                        <h3>Data Science with Python</h3>
+                        <p>Pandas, NumPy, Machine Learning, Visualization</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 16 weeks</span>
+                            <span><i class="fas fa-users"></i> 85 students</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$59</span>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-categories" id="design">
+        <div class="container">
+            <div class="category-header">
+                <h2>Design & Creative</h2>
+                <a href="#" class="view-all">View All →</a>
+            </div>
+            <div class="courses-grid">
+                <div class="course-detailed">
+                    <div class="course-image">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="course-info">
+                        <h3>UI/UX Design Mastery</h3>
+                        <p>Figma, Adobe XD, User Research, Prototyping</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 12 weeks</span>
+                            <span><i class="fas fa-users"></i> 95 students</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$39</span>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Class Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
